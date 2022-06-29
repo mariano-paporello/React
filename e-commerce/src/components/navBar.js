@@ -22,7 +22,8 @@ let divStyle = {
 let h1Style = {
   display: "flex",
   flexBasis: "70%",
-  paddingLeft: "2vw"
+  paddingLeft: "2vw",
+  color: "white",
 }
 
 let ulStyle = {
