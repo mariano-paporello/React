@@ -3,7 +3,7 @@ import React from 'react'
 export default function nav() {
   return (
     <div style={divStyle}> 
-    <h1>E-commerce</h1>
+    <h1 style={h1Style}>E-commerce</h1>
     <ul style={ulStyle}>
   <li style={liStyle}><a style={aStyle} href="#Inicio">Inicio</a></li>
   <li style={liStyle}><a style={aStyle} href="#Productos">Productos</a></li>
@@ -15,22 +15,32 @@ export default function nav() {
 }
 
 let divStyle = {
+  display: "flex",
   overflow: "hidden",
   backgroundColor: "#333",
 }
+let h1Style = {
+  display: "flex",
+  flexBasis: "70%",
+  paddingLeft: "2vw"
+}
 
 let ulStyle = {
+  display: "flex",
   listStyleType: "none",
   margin: 0,
   padding: 0,
   overflow: "hidden",
   backgroundColor: "#333",
+  flexBasis: "30%",
 }
 let liStyle = {
-  float: "left"
+  float: "left",
+  display: "flex",
+  alignItems: "center",
 }
 let aStyle = {
-  display: "block",
+  display: "flex",
   color: "white",
   textAlign: "center",
   padding: 14,
